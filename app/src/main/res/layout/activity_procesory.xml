@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".procesory"
+    android:background="@drawable/bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/procesory"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="Procesory"
+                android:textSize="30sp"
+                app:fontFamily="sans-serif-smallcaps"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/white"
+                android:gravity="center_horizontal"
+                android:text="Socket - gniazdo typu ZIF, umożliwia instalację w obudowie z nóżkami. "
+                app:layout_constraintBottom_toTopOf="@+id/imageView4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/procesory" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="377dp"
+                android:layout_height="274dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:scaleType="centerInside"
+                app:layout_constraintTop_toBottomOf="@+id/textView4"
+                app:srcCompat="@drawable/procesor_zif"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/white"
+                android:gravity="center_horizontal"
+                android:text="LGA - gniazdo do montowania procesorów bez nóżek (płaskie styki) "
+                tools:layout_editor_absoluteX="112dp"
+                tools:layout_editor_absoluteY="440dp" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="287dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/procesor_lga"
+                tools:layout_editor_absoluteX="107dp"
+                tools:layout_editor_absoluteY="458dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/white"
+                android:gravity="center_horizontal"
+                android:text="Jednostka sterowania magistralą odpowiada za współpracę CPU z pamięcią RAM. Dekoder rozkazów odtwarza rozkazy czekające w kolejce do wykonania przez procesor. Dekoder tłumaczy przyjmowane kody rozkazowe na sekwencje operacji do wykonania przez procesor. Jednostka wykonawcza przyjmuje rozkodowane instrukcje i przetwarza je za pomocą jednostki arytmetyczno-logicznej. Jednostka arytmetyczno-logiczna współpracuje z układem sterowania i zespołem rejestrów.  " />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/white"
+                android:gravity="center_horizontal"
+                android:text="Wielordzeniowość polega na tym że w jednym układzie scalonym może występować wiele rdzeni które przetwarzają dane.  " />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/white"
+                android:gravity="center_horizontal"
+                android:text="Pamięć CACHE pozwala na przetwarzanie danych przez procesor. Wyróżniamy pamięci poziomu L1 (dla każdego rdzenia oddzielna, zintegrowana z CPU znajduje się w jego strukturze), L2 (dla każdego rdzenia oddzielna, zintegrowana z CPU w jednej obudowie układu scalonego) i L3 (wspólna dla wszystkich rdzeni). FSB to częstotliwość magistrali systemowej łączącej procesor z kontrolerem pamięci .  " />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/white"
+                android:gravity="center_horizontal"
+                android:text="Technologie w procesorach Intel:
+Hyper Threading - system operacyjny przypisuje procesorowi fizycznemu 2 procesory wirtualne, dzielące się obliczeniami
+Quad Pumping - przesyłanie danych z prędkością czterokrotnie, a adresy z prędkością dwukrotnie wyższą niż FSB
+Magistrala DMI - łączy mostek bezpośrednio z procesorem, brak mostka północnego, kontrolery PCI Express i RAM przeniesiono do procesora
+Turbo Boost - zwiększanie częstotliwości rdzeni, gdy PC potrzebuje wyższej prędkości obliczeniowej
+Smart Cache - dzieli pamięć cache pomiędzy rdzenie chcące w danej chwili z niej skorzystać
+GPU Intel - zintegrowany układ graficzny z procesorem
+Tryby pracy procesora w architekturze x86: 
+tryb rzeczywisty (oprogramowanie 16-bitowe) - uruchamianie na raz tylko jednej aplikacji, nie ma możliwości ochrony danych zapisanych w pamięci RAM
+Tryby pracy w architekturze IA-32:
+tryb chroniony (oprogramowanie 32-bitowe) - tryb ten został wyposażony w mechanizm chroniący dane w pamięci RAM przed nadpisaniem przez inną aplikację
+wirtualny tryb rzeczywisty 
+Tryby pracy w architekturze Intel64, AMD64, x86-64:
+tryb 64-bitowy - umożliwia uruchamianie aplikacji 64-bitowych na platformie 64-bitowej
+tryb zgodności - umożliwia procesorom 64-bitowym obsługę aplikacji 32- i 16-bitowych
+" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

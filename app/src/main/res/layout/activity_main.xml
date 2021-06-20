@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:alpha="1.0"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="83dp"
+            android:layout_marginBottom="5dp"
+            android:contentDescription="@string/logo"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/powitanie_mainScreen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/render" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/powitanie_mainScreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="11dp"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/witamy_w_aplikacji_zawieraj_cej_materia_przygotowawczy_do_egzamin_w_zawodowych_z_zakresu_informatyki"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/button_arytmetyka"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="88dp"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginEnd="88dp"
+                    android:layout_marginRight="88dp"
+                    android:layout_marginBottom="11dp"
+                    android:text="@string/arytmetyka_komputera"
+                    app:layout_constraintBottom_toTopOf="@+id/button_uklady"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/button_uklady"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="88dp"
+                    android:layout_marginLeft="88dp"
+                    android:layout_marginEnd="88dp"
+                    android:layout_marginRight="88dp"
+                    android:layout_marginBottom="11dp"
+                    android:gravity="center"
+                    android:text="@string/uk_ady_cyfrowe"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/button_budowa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="88dp"
+                    android:layout_marginLeft="88dp"
+                    android:layout_marginEnd="88dp"
+                    android:layout_marginRight="88dp"
+                    android:layout_marginBottom="11dp"
+                    android:gravity="center"
+                    android:text="@string/budowa_jednostki_centralnej_komputera"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button_uklady" />
+
+                <Button
+                    android:id="@+id/button_plyta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="88dp"
+                    android:layout_marginLeft="88dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="88dp"
+                    android:layout_marginRight="88dp"
+                    android:layout_marginBottom="11dp"
+                    android:gravity="center"
+                    android:text="@string/p_yta_g_wna"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button_schemat" />
+
+                <Button
+                    android:id="@+id/button_procesory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="88dp"
+                    android:layout_marginLeft="88dp"
+                    android:layout_marginEnd="88dp"
+                    android:layout_marginRight="88dp"
+                    android:layout_marginBottom="11dp"
+                    android:gravity="center"
+                    android:text="@string/procesory"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button_plyta" />
+
+                <Button
+                    android:id="@+id/button_pamiec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="88dp"
+                    android:layout_marginLeft="88dp"
+                    android:layout_marginEnd="88dp"
+                    android:layout_marginRight="88dp"
+                    android:layout_marginBottom="11dp"
+                    android:gravity="center"
+                    android:text="@string/pami_wewn_trzna"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button_procesory" />
+
+                <Button
+                    android:id="@+id/button_chipsety"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="88dp"
+                    android:layout_marginRight="88dp"
+                    android:layout_marginBottom="11dp"
+                    android:gravity="center"
+                    android:text="@string/chipsety" />
+
+                <Button
+                    android:id="@+id/button_gniazda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="88dp"
+                    android:layout_marginRight="88dp"
+                    android:layout_marginBottom="11dp"
+                    android:gravity="center"
+                    android:text="@string/gniazda_rozszerze_i_magistrale" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

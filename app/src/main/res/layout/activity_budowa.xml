@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".budowa"
+    android:background="@drawable/bg">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/budowa"
+                android:layout_width="match_parent"
+                android:layout_height="79dp"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="@string/budowa_jednostki_centralnej_komputera_1"
+                android:textSize="30sp"
+                app:fontFamily="sans-serif-smallcaps"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@android:color/white"
+                android:gravity="center_horizontal"
+
+                android:text="System komputerowy zbudowany jest z 5 warstw: sprzęt, system operacyjny, programy narzędziowe, programy użytkowe i użytkownicy. 
+Zadania systemu operacyjnego:
+-przydzielanie zadań i kontrolowanie procesora
+-przydzielanie pamięci do zadań i kontrolowanie jej wykorzystania
+-zarządzanie listą zadań
+-kontrola urządzeń wejścia-wyjścia i zarządzanie nimi
+-zarządzanie danymi
+-zarządzanie siecią komputerową 
+Procesor odpowiada za przetwarzanie danych, obejmuje jednostkę arytmetyczno-logiczną ALU, jednostkę sterującą CU i zespół rejestrów.Procesor pobiera dane z pamięci operacyjnej, interpretuje je i wykonuje jako rozkazy.
+Pamięć wewnętrzna składa się z pamięci tylko do odczytu (ROM), przechowuje informacje sprzętowe i programy diagnostyczne oraz ulotnej pamięci do odczytu i zapisu RAM, przechowującej przetwarzane dane itp. 
+Magistrala to zespół linii służący do przesyłania danych, adresów i sygnałów między CPU, RAM , ROM i urządzeniami wejścia-wyjścia. Mamy 4 rodzaje magistral systemowych:
+FSB - łączy procesor z kontrolerem pamięci
+DMI - łączy mostek północny i południowy
+QPI - dwukierunkowa magistrala (w Intelach zastąpiła FSB) 
+Hyper Transport (w AMD) - występuje CPU z wbudowanym kontrolerem pamięci
+"
+                tools:layout_editor_absoluteX="136dp"
+                tools:layout_editor_absoluteY="738dp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="309dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/budowa_1" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="377dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="30dp"
+                android:background="@android:color/white"
+                android:gravity="center_horizontal"
+                android:text="CPU komunikuje się z pamięcią oraz urządzeniami wejścia-wyjścia za pomocą szyny adresowej. CPU wysyła sygnały sterujące umożliwiające odczyt lub zapis z poszczególnych urządzeń. Istnieją 4 sygnały sterujące: MR - odczyt pamięci MW - zapis do pamięci IOR - odczyt z urządzeń wejścia-wyjścia IOW - zapis z urządzeń wejścia-wyjścia "
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
